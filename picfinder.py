@@ -14,7 +14,7 @@ source = cv.imread('source.jpeg')
 target = cv.imread('target.jpg')
 target = cv.resize(target, (32,32), interpolation=cv.INTER_AREA)
 
-# l = []
+l = []
 
 (m, n, d) = source.shape
 m = m//32
