@@ -10,8 +10,11 @@ def mse(im1, im2):
     
 
 source = cv.imread('source.jpeg')
+# add path to the target image(to find) here
 target = cv.imread('target.jpg')
-l = []
+target = cv.resize(target, (32,32), interpolation=cv.INTER_AREA)
+
+# l = []
 
 (m, n, d) = source.shape
 m = m//32
